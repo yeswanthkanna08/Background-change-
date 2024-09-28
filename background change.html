@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+</head>
+<body>
+    <center>
+        <button onclick=" changecolor ()"> clik</button>
+        <script>
+            var a=[ "pink","red","yellow","blue","orange"]
+            let index=0
+            function changecolor(){
+                document.body.style.backgroundColor=a[index]
+                index=(index+1)%a.length
+            }
+        </script>
+    </center>
+</body>
+</html>
